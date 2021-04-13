@@ -1,17 +1,7 @@
 #include "lib.h"
-#include <string>
 
+int SumAndSubstraction::sum(int first, int second) {
 
-Coordinates::Coordinates(int x, int y) {
-    this->x = x;
-    this->y = y;
-}
+	return first + second;
 
-Coordinates::Coordinates(const std::string& position) {
-    if (position[0] >= 'a' && position[0] <= 'z') {
-        x = position[0] - 'a';
-    } else {
-        x = position[0] - 'A';
-    }
-    y = position[1] - '1';
 }

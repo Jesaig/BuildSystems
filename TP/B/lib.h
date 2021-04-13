@@ -1,12 +1,7 @@
 #pragma once
 
-#include <string>
+namespace SumAndSubstraction {
 
-struct Coordinates {
-    int x;
-    int y;
+	int sum(int first, int second);
 
-    Coordinates(int x, int y);
-
-    Coordinates(const std::string& position);
 };

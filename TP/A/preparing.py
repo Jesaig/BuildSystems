@@ -1,12 +1,12 @@
 checkerStruct = '''
-struct Checker {
-    bool color;
-    bool isKing;
+namespace SumAndSubstraction {
+    
+    int substraction(int first, int second) {
 
-    Checker(bool color, bool isKing) {
-        this->color = color;
-        this->isKing = isKing;
+        return first - second;
+
     }
+
 };\n
 '''
 

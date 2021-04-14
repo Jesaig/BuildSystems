@@ -36,3 +36,38 @@
   * [State](/State/cpp-source)
   * [Memento](/Memento/cpp-source)
   * [Visitor](/Visitor/cpp-source)
+
+## Инструкция по созданию окружения разработчика и сборке проекта (для Ubuntu)
+
+* Компилятор C++\
+Допустимо использование как g++, так и gcc.\
+`sudo apt update`\
+`sudo apt instal build-essential`\
+После установки можно убедиться в том, что всё прошло успешно, выполнив:\
+`gcc --version` или `g++ --version`.
+* Boost\
+[Download boost](https://www.boost.org/users/download/)\
+`cd boost`\
+`./bootstrap.sh --prefix=usr/local/Cellar/boost`\
+`./b2`\
+`cd ..`
+* Openssl\
+[Download openssl](https://github.com/openssl/openssl/blob/52c6c12c1cad6f1046b34f4139d1aa3e967a5530/INSTALL.md)\
+`cd openssl`\
+`./Configure --prefix=/usr/local/Cellar/openssl`\
+`make`\
+`make install`\
+`cd ..`
+* Curl\
+[Download curl](https://curl.se/docs/install.html)\
+`cd curl`\
+`./buildconf`\
+`./configure`\
+`make`\
+`cd ..`
+* Сборка проекта\
+`mkdir build`\
+`cd build`\
+`cmake ..`\
+`make`\
+`cd ..`
